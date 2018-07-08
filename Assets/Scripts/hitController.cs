@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class pigController : MonoBehaviour {
+public class hitController : MonoBehaviour {
     [SerializeField] private int maxHits;
     private int hits;
 
