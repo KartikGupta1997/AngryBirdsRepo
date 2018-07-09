@@ -5,15 +5,22 @@ using UnityEngine;
 public class birdController : MonoBehaviour {
 
     public Rigidbody rb;
-    [SerializeField]private Vector3 forcePos, localForcePos;
+    [SerializeField]private float xPow;
 	// Use this for initialization
 	void Start () {
         rb = GetComponent<Rigidbody>();
-        localForcePos = transform.InverseTransformPoint(forcePos);
 
     }
     private void Update()
     {
+        if (Input.GetKey(KeyCode.UpArrow))
+        {
+            transform.Rotate(new Vector3(0, 0, 5));
+        }
+        else if (Input.GetKey(KeyCode.DownArrow))
+        {
+            transform.Rotate(new Vector3(0, 0, -5));
+        }
 
     }
     // Update is called once per frame
@@ -21,7 +28,7 @@ public class birdController : MonoBehaviour {
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            this.rb.AddForce(localForcePos, ForceMode.Impulse);
+            this.rb.AddRelativeForce(new Vector3(xPow, 0,0), ForceMode.Impulse);
           
 
         }
