@@ -11,6 +11,7 @@ public class hitController : MonoBehaviour {
     {
         hits = 0;
     }
+
     private void OnCollisionEnter(Collision collision)
     {
         hits++;
