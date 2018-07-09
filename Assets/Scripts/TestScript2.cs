@@ -5,7 +5,6 @@ using UnityEngine;
 public class TestScript2 : MonoBehaviour {
     private float yval;
     [Range(3f, 7f)] public float xval;
-    [Range(0.267f,2.74f)]public float rotValue;
     public Rigidbody rb;
     // Use this for initialization
     void Start () {
@@ -19,8 +18,8 @@ public class TestScript2 : MonoBehaviour {
   
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            yval = rotValue * xval;
-            this.rb.AddForce(new Vector3(xval, yval, 0), ForceMode.Impulse);
+          
+            this.rb.AddRelativeForce(new Vector3(xval, 0, 0), ForceMode.Impulse);
 
 
         }

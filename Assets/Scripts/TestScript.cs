@@ -15,4 +15,3 @@ public class TestScript : MonoBehaviour {
 
     }
 }
-//Time.deltaTime*30
