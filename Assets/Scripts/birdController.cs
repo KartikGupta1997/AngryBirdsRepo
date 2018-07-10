@@ -5,11 +5,16 @@ using UnityEngine;
 public class birdController : MonoBehaviour {
 
     public Rigidbody rb;
-    [SerializeField]private float xPow;
+    [Range(10,16)][SerializeField]private float xPow;
+    public int scoreTotal;
+    
+
 	// Use this for initialization
 	void Start () {
         rb = GetComponent<Rigidbody>();
-
+        Debug.Log(test);
+       
+       
     }
     private void Update()
     {
@@ -21,6 +26,7 @@ public class birdController : MonoBehaviour {
         {
             transform.Rotate(new Vector3(0, 0, -5));
         }
+        Debug.Log("Score is: " + scoreTotal);
 
     }
     // Update is called once per frame
@@ -34,4 +40,5 @@ public class birdController : MonoBehaviour {
         }
     }
 
+    
 }
