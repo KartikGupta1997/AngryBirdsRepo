@@ -757,6 +757,47 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1065893a3e75ee849b300de2abbcac23, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1154599399
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1154599401}
+  - component: {fileID: 1154599400}
+  m_Layer: 0
+  m_Name: respawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1154599400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1154599399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e92ba5d383304442bbb23adf9afe02e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  birdSpawn: {fileID: 1986992167448648, guid: 99143b0ff5febf444a105761677fdb28, type: 2}
+--- !u!4 &1154599401
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1154599399}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.7167664, y: 4.2404785, z: -1.1386719}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1497550979
 Prefab:
   m_ObjectHideFlags: 0
@@ -830,6 +871,11 @@ Prefab:
       propertyPath: xPow
       value: 16
       objectReference: {fileID: 0}
+    - target: {fileID: 54024816677170098, guid: 99143b0ff5febf444a105761677fdb28,
+        type: 2}
+      propertyPath: m_AngularDrag
+      value: 200
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 99143b0ff5febf444a105761677fdb28, type: 2}
   m_IsPrefabParent: 0
@@ -880,6 +926,11 @@ Prefab:
     - target: {fileID: 1905126439978960, guid: baef0010110e94b419743eacf622d6c6, type: 2}
       propertyPath: m_TagString
       value: pig
+      objectReference: {fileID: 0}
+    - target: {fileID: 54260529150522582, guid: baef0010110e94b419743eacf622d6c6,
+        type: 2}
+      propertyPath: m_AngularDrag
+      value: 200
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: baef0010110e94b419743eacf622d6c6, type: 2}
