@@ -12,8 +12,7 @@ public class birdController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         rb = GetComponent<Rigidbody>();
-        Debug.Log(test);
-       
+
        
     }
     private void Update()
