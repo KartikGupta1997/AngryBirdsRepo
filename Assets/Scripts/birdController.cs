@@ -27,13 +27,13 @@ public class birdController : MonoBehaviour {
     {
 
         powerTextFunc();
-        if (Input.GetKey(KeyCode.UpArrow))
+        if (Input.GetKey(KeyCode.UpArrow) && canJump == true)
         {
-            transform.Rotate(new Vector3(0, 0, 5));
+            transform.Rotate(new Vector3(0, 0, 3));
         }
-        else if (Input.GetKey(KeyCode.DownArrow))
+        else if (Input.GetKey(KeyCode.DownArrow) && canJump == true)
         {
-            transform.Rotate(new Vector3(0, 0, -5));
+            transform.Rotate(new Vector3(0, 0, -3));
         }
 
 

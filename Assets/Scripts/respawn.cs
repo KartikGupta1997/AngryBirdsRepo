@@ -13,7 +13,7 @@ public class respawn : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKeyDown(KeyCode.R) && birdCount>=2)
+        if (Input.GetKeyDown(KeyCode.R) && birdCount<=2)
         {
             Instantiate(birdSpawn);
         }
