@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 114913232206435884}
   m_Layer: 0
   m_Name: obstacleVert
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37,8 +37,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1956848824585986}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.0959473, y: 3.71, z: 0}
+  m_LocalRotation: {x: 0.000011385555, y: 0.0000004836472, z: 0.000020377875, w: 1}
+  m_LocalPosition: {x: 6.095903, y: 3.568371, z: 0.000021711106}
   m_LocalScale: {x: 0.5, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -124,4 +124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5614953058bb65348a6e6f4a8f06834e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHits: 0
+  maxHits: 3
+  maxScore: 0
+  hits: 0
+  test: 0

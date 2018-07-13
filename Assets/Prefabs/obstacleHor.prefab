@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 114874811200835230}
   m_Layer: 0
   m_Name: obstacleHor
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37,8 +37,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1425660515331098}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.57, y: 5.01, z: 0}
+  m_LocalRotation: {x: 0.000015879306, y: -0.00000036551012, z: 0.0000060295656, w: 1}
+  m_LocalPosition: {x: 7.569893, y: 4.8039, z: 0.000044840624}
   m_LocalScale: {x: 3.523811, y: 0.47097984, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -124,4 +124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5614953058bb65348a6e6f4a8f06834e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHits: 0
+  maxHits: 3
+  maxScore: 0
+  hits: 0
+  test: 0

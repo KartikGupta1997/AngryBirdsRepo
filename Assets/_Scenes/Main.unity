@@ -785,6 +785,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   birdSpawn: {fileID: 1986992167448648, guid: 99143b0ff5febf444a105761677fdb28, type: 2}
+  birdCount: 2
 --- !u!4 &1154599401
 Transform:
   m_ObjectHideFlags: 0
@@ -869,7 +870,7 @@ Prefab:
     - target: {fileID: 114377910887203262, guid: 99143b0ff5febf444a105761677fdb28,
         type: 2}
       propertyPath: xPow
-      value: 16
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 54024816677170098, guid: 99143b0ff5febf444a105761677fdb28,
         type: 2}
