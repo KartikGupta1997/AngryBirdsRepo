@@ -186,9 +186,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
-  xPow: 10
   scoreTotal: 0
   canJump: 0
+  destroyTime: 3
+  powerText: {fileID: 0}
 --- !u!135 &135414746706813192
 SphereCollider:
   m_ObjectHideFlags: 1
