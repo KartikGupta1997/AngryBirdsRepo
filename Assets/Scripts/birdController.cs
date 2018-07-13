@@ -7,12 +7,13 @@ public class birdController : MonoBehaviour {
     public Rigidbody rb;
     [Range(10,16)][SerializeField]private float xPow;
     public int scoreTotal;
+    public bool canJump;
     
 
 	// Use this for initialization
 	void Start () {
         rb = GetComponent<Rigidbody>();
-
+        canJump = true;
        
     }
     private void Update()
@@ -31,11 +32,11 @@ public class birdController : MonoBehaviour {
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && canJump == true)
         {
             this.rb.AddRelativeForce(new Vector3(xPow, 0,0), ForceMode.Impulse);
-          
-
+            Destroy(gameObject, 3); //Destroys gameobject after 3 seconds
+            canJump = false;
         }
     }
 
