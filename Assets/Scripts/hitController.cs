@@ -29,12 +29,12 @@ public class hitController : MonoBehaviour {
             //else
             //if (this.gameObject.CompareTag("wall")) 
             //this code will not work because this script is attached  to each component, each has its own maxScore, which initialises to zero for each deactivated objects 
-                
+
             //{
             //    maxScore = maxScore + 10;
-                
+
             //}
-            this.gameObject.SetActive(false);
+            Destroy(gameObject);
          
         }
     }
