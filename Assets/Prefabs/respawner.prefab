@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4074040918477318}
   - component: {fileID: 114255943445157396}
   - component: {fileID: 114234233679564086}
+  - component: {fileID: 114596338299624214}
   m_Layer: 0
   m_Name: respawner
   m_TagString: Untagged
@@ -67,3 +68,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   birdSpawn: {fileID: 1986992167448648, guid: 99143b0ff5febf444a105761677fdb28, type: 2}
   birdCount: 2
+--- !u!114 &114596338299624214
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1174886734921992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67177607f0b22bb49858f5a354ea1801, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
