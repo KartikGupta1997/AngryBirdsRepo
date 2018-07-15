@@ -7,6 +7,7 @@ public class hitController : MonoBehaviour {
     public int maxScore;
     public int hits;
     public int test;
+    public GameObject particleEffect;
 
     private void Awake()
     {
@@ -34,8 +35,11 @@ public class hitController : MonoBehaviour {
             //    maxScore = maxScore + 10;
 
             //}
+            Instantiate(particleEffect,this.transform.position, Quaternion.identity );
             Destroy(gameObject);
          
         }
+        
     }
+
 }

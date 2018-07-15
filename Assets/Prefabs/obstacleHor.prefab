@@ -128,3 +128,5 @@ MonoBehaviour:
   maxScore: 0
   hits: 0
   test: 0
+  particleEffect: {fileID: 1381000862737836, guid: 91e3b5e3097fb0f4486a626feddf999e,
+    type: 2}
