@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class birdController : MonoBehaviour {
 
+    [SerializeField] private GameObject deathParticles;
     public Rigidbody rb;
     private float xPow;
     public int scoreTotal;
@@ -58,6 +59,7 @@ public class birdController : MonoBehaviour {
         {
             
             this.rb.AddRelativeForce(new Vector3(xPow, 0,0), ForceMode.Impulse);
+            
             Destroy(gameObject, destroyTime); //Destroys gameobject after "destroyTime" seconds
             canJump = false;
         }
@@ -66,4 +68,5 @@ public class birdController : MonoBehaviour {
     {
         powerText.text = "Power: " + xPow.ToString();
     }
+
 }
