@@ -20,8 +20,7 @@ public class LevelManager : MonoBehaviour {
         {
 
 
-            int totalScenes = SceneManager.sceneCountInBuildSettings;
-            Debug.Log("Total scenes are:" + totalScenes);
+            int totalScenes = SceneManager.sceneCountInBuildSettings;  
             int index = (SceneManager.GetActiveScene().buildIndex + 1) % totalScenes; 
             //when index becomes equal to total scenes, due to %totalScenes, index value becomes 0, that is the game restarts 
             SceneManager.LoadScene(index, LoadSceneMode.Single); //LoadSceneMode.Single Closes all current loaded scenes and loads a scene
