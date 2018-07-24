@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class respawn : MonoBehaviour {
 
@@ -18,5 +19,12 @@ public class respawn : MonoBehaviour {
             Instantiate(birdSpawn);
             birdCount--;
         }
+        if (birdCount <= 0) {
+            LoadCurrentScene();
+        }
 	}
+    public static void LoadCurrentScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
 }
