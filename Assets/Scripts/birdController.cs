@@ -26,27 +26,27 @@ public class birdController : MonoBehaviour {
     // Update is called once per frame
     private void Update()
     {
-
         powerTextFunc();
-        if (Input.GetKey(KeyCode.UpArrow) && canJump == true)
+
+        if (Input.GetAxis("Mouse ScrollWheel") > 0f && canJump == true)
         {
-            transform.Rotate(new Vector3(0, 0, 3));
+            transform.Rotate(new Vector3(0, 0, 2));
         }
-        else if (Input.GetKey(KeyCode.DownArrow) && canJump == true)
+        else if (Input.GetAxis("Mouse ScrollWheel") < 0f && canJump == true)
         {
-            transform.Rotate(new Vector3(0, 0, -3));
+            transform.Rotate(new Vector3(0, 0, -2));
         }
 
 
 
-        if (Input.GetKeyDown(KeyCode.W) && xPow<=15) //Mathf.Clamp not working here 
+        if (Input.GetMouseButtonDown(0) && xPow<=15) //Mathf.Clamp not working here 
         {
             xPow++;
             Debug.Log(xPow);
 
         }
         else
-        if (Input.GetKeyDown(KeyCode.S) && xPow >= 10) //Mathf.Clamp not working here 
+        if (Input.GetMouseButtonDown(1) && xPow >= 10) //Mathf.Clamp not working here 
         {
             xPow--;
             Debug.Log(xPow);
@@ -55,7 +55,7 @@ public class birdController : MonoBehaviour {
 
     void FixedUpdate()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && canJump == true)
+        if (Input.GetMouseButtonDown(2) && canJump == true)
         {
             
             this.rb.AddRelativeForce(new Vector3(xPow, 0,0), ForceMode.Impulse);
